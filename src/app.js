@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.json()); // Agregamos este que permite pasar las cosas en JSON
 
-app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);//cambiamos la ruta porque estaba mal
 app.use("/api/users", userRoutes);
 app.use("/api/admin", adminRoutes);
 

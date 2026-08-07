@@ -1,3 +1,7 @@
+CREAR ARCHIVO . ENV Y ESCRIBIR: 
+PORT=3000
+JWT_SECRET=valuYailu
+
 # Trabajo Practico de Repaso - Operacion Rescate II
 
 Este proyecto fue creado para practicar depuracion de backend con Node.js, Express, JWT, autenticacion y autorizacion.
