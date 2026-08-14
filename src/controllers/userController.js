@@ -14,7 +14,7 @@ function getProfile(req, res) {
 }
 
 function updateMe(req, res) {
-  const userId = req.user.id; //dejamos solo la validada con el toen jwt (no anda la tecla de la letra que se lee "ca").
+  const userId = req.user.id; //dejamos solo la validada con el token jwt.
   const user = users.find((u) => u.id === userId);
 
   if (!user) {

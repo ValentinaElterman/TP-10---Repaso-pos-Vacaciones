@@ -3,7 +3,7 @@ const { JWT_SECRET } = require("../utils/token"); //agregamos
 
 function authMiddleware(req, res, next) {
   const authHeader = req.headers["authorization"] || req.headers["x-access-token"];
-  //agregamos verificaciones y mensajes, separando al auth y adnim en dos funciones diferentes para que cada funcion tenga una responsabilidad
+  //agregamos verificaciones y mensajes, separando al auth y admin en dos funciones diferentes para que cada funcion tenga una responsabilidad
   if (!authHeader) {
     return res.status(401).json({ message: "Acceso denegado: Token no proporcionado" });
   }

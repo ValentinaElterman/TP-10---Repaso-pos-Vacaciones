@@ -11,7 +11,7 @@ const app = express();
 
 // Middlewares globales
 app.use(morgan("dev"));
-app.use(express.json()); // Agregamos este que permite pasar las cosas en JSON
+app.use(express.json()); // agregamos este que permite pasar las cosas en JSON
 
 app.use("/api/auth", authRoutes);//cambiamos la ruta porque estaba mal
 app.use("/api/users", userRoutes);
