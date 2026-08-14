@@ -5,6 +5,6 @@ const { listUsers } = require("../controllers/adminController");
 
 const router = express.Router();
 
-router.get("/users", authMiddleware, adminMiddleware, listUsers); //agregamos esto protegido
+router.get("/all", authMiddleware, adminMiddleware, listUsers); //agregamos esto protegido
 
 module.exports = router;
